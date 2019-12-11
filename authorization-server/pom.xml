@@ -15,7 +15,8 @@
 	<description>oauth authorization server</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
+		<oauth-version>2.2.2.RELEASE</oauth-version>
 	</properties>
 
 	<dependencies>
@@ -34,6 +35,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security.oauth.boot</groupId>
+			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
+			<version>${oauth-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
